@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./index.css" rel="stylesheet"></link>
+    <script src="https://kit.fontawesome.com/706b04338c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <span class="container1">
+    <div class="form-container">
+        <div class="form-wrapper">
+          <h1 class="form-title">Gross annual income</h1>
+          <div class="form-input-container">
+            <span class="label-container">
+                <label for="gross-income" class="form-label">Enter gross annual income</label>
+                <i class="fa-regular fa-circle-question tooltip-trigger" id="target-1"></i>
+            </span>
+            <div class="tooltip" id="tooltip-1"> <p>This is your total income before any deductions or taxes are applied.</p>
+            </div>
+
+             <span class="form-input-inner-container">
+                <input id="gross-income" class="form-input" placeholder="Enter gross annual income">
+                <svg style="color:red" xmlns="http://www.w3.org/2000/svg" class="exclam-icon exclam-icon1" viewBox="0 0 24 24"><title>Please enter numbers only</title><path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" /></svg>
+            </span>
+            
+          
+          </div>
+          <div class="form-input-container">
+            <span class="label-container">
+                <label for="gross-income" class="form-label">Enter extra income</label>
+                <i class="fa-regular fa-circle-question" id="target-2"></i>
+            </span>
+            <div class="tooltip" id="tooltip-2"> <p>Include any additional income you receive outside of your main job</p>
+            </div>
+
+            <span class="form-input-inner-container">
+                <input id="extra-income" class="form-input" placeholder="Enter extra income from other sources">
+                <svg xmlns="http://www.w3.org/2000/svg" class="exclam-icon exclam-icon2" viewBox="0 0 24 24"><title>Please enter numbers only</title><path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" /></svg>
+            </span>
+
+           
+          </div>
+
+          <div class="form-input-container">
+            <span class="label-container">
+                <label for="gross-income" class="form-label">Enter age group</label>
+                <i class="fa-regular fa-circle-question" id="target-3"></i>
+            </span>
+            <div class="tooltip" id="tooltip-3"> <p>Your age group will be used to determine the appropriate tax rate.</p>
+            </div>
+            <span class="form-input-inner-container">
+                <input type="number" id="age-group" class="form-input" placeholder="">
+                <svg xmlns="http://www.w3.org/2000/svg" class="exclam-icon exclam-icon3" viewBox="0 0 24 24"><title>Please enter a valid age</title><path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" /></svg>
+            </span>
+          </div>
+
+          <div class="form-input-container">
+            <span class="label-container">
+                <label for="gross-income" class="form-label">Enter total applicable deductions</label>
+                <i class="fa-regular fa-circle-question" id="target-4"></i>
+            </span>
+            <div class="tooltip" id="tooltip-4"> <p>These are expenses you can subtract from your taxable income to reduce your tax liability</p>
+            </div>
+            <span class="form-input-inner-container">
+                <input id="deductions" class="form-input" placeholder="Add total applicable deductions">
+                <svg xmlns="http://www.w3.org/2000/svg" class="exclam-icon exclam-icon4" viewBox="0 0 24 24"><title>Please enter numbers only</title><path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" /></svg>
+            </span>
+           
+          </div>
+
+          <div class="form-button-container">
+            <button type="button" class="form-button" id="submitButton">Submit</button>
+          </div>
+          <p class="form-info">Please enter numbers only</p>
+        </div>
+      </div>
+    </span>
+
+      <div class="container2" id="container2">
+        <div class="result-container">
+          <h1 class="title">Your Overall Income Will be </h1>
+          <h1 class="" id="income-result"> </h1>
+          <p class="description">After Tax Deductions</p>
+          <button type="button" class="close-button" id="closeButton">Close</button>
+        </div>
+      </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
